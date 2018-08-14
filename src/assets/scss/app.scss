@@ -1,0 +1,6 @@
+@import '_color';
+@import './BarGraph/index';
+body {
+  background: $bgcolor;
+  color: $color;
+}
