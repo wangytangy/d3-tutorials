@@ -1,10 +1,18 @@
 var data = [30, 86, 168, 281, 303, 365];
 
 const renderBarGraph = () => {
-  return d3.select(".fixed-scale")
+  return d3.select(".fixed-scale") // select graph container
+
+    // selects the bars that WILL appear
     .selectAll("div")
+
+    // join the data to the selected bars
     .data(data)
+
+  // since bar elements don't exist, we need to call enter which represents new data
   .enter().append("div")
+
+    // set styles and inner text for bar div's
     .style("width", function(d) { return d + "px"; })
     .text(function(d) { return d; });
 }
