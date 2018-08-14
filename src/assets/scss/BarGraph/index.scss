@@ -24,3 +24,13 @@
     color: white;
   }
 }
+
+.svg-bar-graph rect {
+  fill: steelblue;
+}
+
+.svg-bar-graph text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}

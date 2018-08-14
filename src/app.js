@@ -3,3 +3,4 @@ import BarGraphModule from './BarGraph/index';
 
 BarGraphModule.renderBarGraph();
 BarGraphModule.renderLinearScaleBarGraph();
+BarGraphModule.renderSVGBarGraph();
