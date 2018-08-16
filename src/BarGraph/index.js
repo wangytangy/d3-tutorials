@@ -66,6 +66,18 @@ const renderSVGBarGraph = () => {
     .text((d) => { return d; })
 };
 
+const getTSVFile = () => {
+  d3.tsv('http://192.168.1.5:2000/src/BarGraph/data.tsv')
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+}
+
+getTSVFile();
+
 const BarGraphModule = {
   renderBarGraph,
   renderLinearScaleBarGraph,
